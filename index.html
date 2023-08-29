@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="tooltip.css">
+    <title>Unlimited Background Color Changer</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            background-color: rgb(0, 0, 0);
+            color: aliceblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .description{
+            text-align: center;
+            
+        }
+        .hexcode {
+            margin-top: 20%;
+            padding: 10px;
+            border: 1px solid white;
+            border-radius: 7px;
+            font-family:'Courier New', Courier, monospace;
+            cursor: pointer;
+        }
+        button{
+            background-color: black;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 7px;
+            border: 1px solid white;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header><h1>Unlimited Background Color Changer</h1></header>
+      <div class="description">
+            <p>
+              Click on the start button to generate unlimited background color
+            </p>
+            <p>
+              Click on the stop button and you can copy the hex code of your
+              favorite background color
+            </p>
+      </div>
+      <div class="buttons">
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+      </div>
+      <div class="hexcode tooltip">
+        <span id="colorCode">#000000</span>
+        <!-- <span class="tooltiptext" id="myTooltip">Copy to clipboard</span> -->
+        <i class="fa-solid fa-copy"></i>
+        <span class="tooltiptext" id="myTooltip">copy!</span>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/d89d11968a.js" crossorigin="anonymous"></script>
+</html>
